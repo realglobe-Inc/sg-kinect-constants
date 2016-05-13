@@ -4,11 +4,11 @@
  */
 'use strict'
 
-const kinnectHandState = require('../lib/kinnect_hand_state.js')
+const handState = require('../lib/hand_state.js')
 const assert = require('assert')
 const co = require('co')
 
-describe('kinnect-hand-state', () => {
+describe('hand-state', () => {
   before(() => co(function * () {
 
   }))
@@ -18,8 +18,8 @@ describe('kinnect-hand-state', () => {
   }))
 
   it('Kinnect hand state', () => co(function * () {
-    for (let name of Object.keys(kinnectHandState)) {
-      assert.ok(typeof kinnectHandState[ name ] !== 'undefined')
+    for (let name of Object.keys(handState)) {
+      assert.ok(typeof handState[ name ] !== 'undefined')
     }
   }))
 })

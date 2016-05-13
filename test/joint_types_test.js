@@ -4,11 +4,11 @@
  */
 'use strict'
 
-const kinnectJointTypes = require('../lib/kinnect_joint_types.js')
+const jointTypes = require('../lib/joint_types.js')
 const assert = require('assert')
 const co = require('co')
 
-describe('kinnect-joint-types', () => {
+describe('joint-types', () => {
   before(() => co(function * () {
 
   }))
@@ -18,8 +18,8 @@ describe('kinnect-joint-types', () => {
   }))
 
   it('Kinnect joint types', () => co(function * () {
-    for (let name of Object.keys(kinnectJointTypes)) {
-      assert.ok(typeof kinnectJointTypes[ name ] !== 'undefined')
+    for (let name of Object.keys(jointTypes)) {
+      assert.ok(typeof jointTypes[ name ] !== 'undefined')
     }
   }))
 })

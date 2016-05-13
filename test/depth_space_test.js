@@ -4,11 +4,11 @@
  */
 'use strict'
 
-const kinnectDepthSpace = require('../lib/kinnect_depth_space.js')
+const depthSpace = require('../lib/depth_space.js')
 const assert = require('assert')
 const co = require('co')
 
-describe('kinnect-depth-space', () => {
+describe('depth-space', () => {
   before(() => co(function * () {
 
   }))
@@ -18,8 +18,8 @@ describe('kinnect-depth-space', () => {
   }))
 
   it('Kinnect depth space', () => co(function * () {
-    for (let name of Object.keys(kinnectDepthSpace)) {
-      assert.ok(typeof kinnectDepthSpace[ name ] !== 'undefined')
+    for (let name of Object.keys(depthSpace)) {
+      assert.ok(typeof depthSpace[ name ] !== 'undefined')
     }
   }))
 })

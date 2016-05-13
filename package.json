@@ -1,6 +1,6 @@
 {
   "name": "sg-kinect-constants",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Constans of kinect",
   "main": "lib",
   "scripts": {

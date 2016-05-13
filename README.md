@@ -100,6 +100,7 @@ Values
 | BOUND_WIDTH | 512 |
 | BOUND_HEIGHT | 424 |
 
+
 ##### kinnectHandState
 
 | Key | Value |
@@ -109,6 +110,7 @@ Values
 | OPEN | 2 |
 | CLOSED | 3 |
 | LASSO | 4 |
+
 
 ##### kinnectJointTypes
 
@@ -139,6 +141,7 @@ Values
 | THUMB_LEFT | 22 |
 | HAND_TIP_RIGHT | 23 |
 | THUMB_RIGHT | 24 |
+
 
 
 

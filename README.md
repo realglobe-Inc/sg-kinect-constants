@@ -40,7 +40,7 @@ Constans of kinect
 <!-- Overview Start -->
 <a name="overview"></a>
 
-Constant variables for kinnect sensor
+
 
 <!-- Overview End -->
 

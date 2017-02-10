@@ -1,6 +1,6 @@
 {
   "name": "sg-kinect-constants",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Constans of kinect",
   "main": "lib",
   "browser": "shim/browser",

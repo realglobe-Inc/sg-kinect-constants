@@ -1,12 +1,12 @@
 {
   "name": "sg-kinect-constants",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Constans of kinect",
   "main": "lib",
-  "browser": "browser",
+  "browser": "shim/browser",
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js && ./ci/browser.js"
+    "test": "node ./ci/test.js",
+    "prepublish": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/sg-kinect-constants",
   "keywords": [
@@ -18,7 +18,7 @@
     "email": "okunishitaka.com@gmail.com",
     "url": "http://okunishitaka.com"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/realglobe-Inc/sg-kinect-constants/issues"
   },
@@ -27,22 +27,21 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ape-compiling": "^4.2.0",
-    "ape-covering": "^3.0.3",
-    "ape-releasing": "^3.1.1",
-    "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.1",
-    "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.2",
-    "ape-updating": "^3.0.2",
-    "coz": "^6.0.2",
-    "injectmock": "^2.0.0"
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "ababel-react": "^2.0.0",
+    "ape-releasing": "^4.0.4",
+    "ape-tasking": "^4.0.9",
+    "ape-testing": "^4.0.2",
+    "ape-tmpl": "^5.0.20",
+    "ape-updating": "^4.1.0",
+    "coz": "^6.0.20",
+    "filecopy": "^3.0.0",
+    "injectmock": "^2.0.0",
+    "sugos-travis": "^2.0.7"
   },
   "engines": {
     "node": ">=6",
-    "npm": ">=3"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+    "npm": ">=4"
   }
 }

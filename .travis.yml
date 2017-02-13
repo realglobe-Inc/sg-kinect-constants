@@ -1,13 +1,14 @@
 language: node_js
 node_js:
 - '6'
-before_install:
-- npm install istanbul mocha babel-cli -g
-- npm install babel-preset-es2015 -D
 install:
 - npm install
 script:
 - ./ci/build.js
+- ./ci/shim.js
 - ./ci/test.js
-- ./ci/cover.js
-- ./ci/report.js
+after_success:
+- ./ci/travis/publish.js
+- ./ci/travis/push_sugos_index.js
+env:
+  secure: "g43dPcav1qAyogDDouWkG+0LtwzlkNmMCq0OZXfX8Ta79i0WuAgdASKXL4TLySWMjBUzd8q6z595rw6blVI1a+/Fp6QCeub+yQwHm+QWLin80vFRVhf2M+DrqJQLyvsF5h+WTwYPY+y/zpIVF0yBhjgeVIi0ydLdV29VHbISt+4CvJIIik/WGToxlO/D/Yo7LZSF/9Gl8cMp/Tc4xJTY/+XJZleIjHUaWd0z9HaededKNj8SDnVcU8AudvZAD7G6+zZd0eP3PYBnBFechc8A4Af/9N42zNUI6F/hh0uQLjVe3boR5CtjgiRsI+RFt7YZUIKl3lcynK4vM/TAOij/VUpZZnjrQO9oFz4vDp78d5muF3Xc9zEp1fb0afIbUg3EObHFGNG+ZdG77Shls77jDq4fipmJNZMQC5aNtzMuSGAxwfIQaYr+3ZgEdC7fklMr3lLSj9kiMJdfpmffb1PovqlCqUwcnQ60RMHDZ1XAXJ4du9BxPVB89e/VSow382NG+PqFco23js8OyqHKspV7oDN7C8nTOL9eM6OpSFQlnklS+M0Jl31r/GUcYKZRw0ZZzDIpg4aX2rYkeM+/hIGXH7/jQhL9qs4SzNtd+uwEi18PQSMbUknnJ61VZDIuJRdS77rqdxW7i29TOnDGJ2uABw7SVJEFjsA3lTi1fy7nDso="
